@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANKUR DENTAL CLINIC</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f2f7fb;
+            color: #222;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #005da8, #0084ff);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+            font-weight: 800;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        .doctor-card {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+            display: flex;
+            gap: 25px;
+            margin-bottom: 40px;
+            align-items: center;
+            animation: slideUp 1.2s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+        }
+
+        .doctor-card img {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            color: #005da8;
+            margin-top: 0;
+            font-size: 26px;
+        }
+
+        .doctor-card p {
+            margin: 6px 0;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .map-title {
+            text-align: center;
+            margin-top: 40px;
+            animation: fadeIn 2s ease;
+        }
+
+        .map-title h2 {
+            color: #003d75;
+            font-size: 28px;
+        }
+
+        footer {
+            text-align: center;
+            background: #004f91;
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 16px;
+        }
+
+        .floating-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            padding: 18px 20px;
+            border-radius: 50%;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+            animation: pulse 2s infinite;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+        @keyframes slideUp { from {opacity: 0; transform: translateY(40px);} to {opacity: 1; transform: translateY(0);} }
+        @keyframes pulse { 0% {transform: scale(1);} 50% {transform: scale(1.08);} 100% {transform: scale(1);} }
+
+        @media (max-width: 768px) {
+            .doctor-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .doctor-card img {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>ANKUR DENTAL CLINIC</h1>
+    <p>Bhopal • Professional Dental Healthcare</p>
+    <p>Morning Time: 11am-2pm</p>
+<p>Evening Time: 7pm-9pm</p>
+<p>Sunday Closed</p>
+</header>
+
+<div class="container">
+
+    <!-- Doctor 1 -->
+    <div class="doctor-card">
+        <img src="ankur.jpg" alt="Dr. Ankur">
+        <div>
+            <h2>Dr. Ankur Chaukse</h2>
+            <p><strong>BDS (Nair-Mumbai), MDS (GDC-Indore)</strong></p>
+            <p><strong>Reg. No:</strong> A-0899</p>
+            <p><strong>Experience:</strong> 16 Years</p>
+            <p><strong>Specialist:</strong> Orthodontist (Braces & Teeth Alignment Expert)</p>
+            <p><strong>Address:</strong> HP Petrol Pump, JSM Tower, Beemakunj Kolar Rd Opposite, Bhopal, Madhya Pradesh 462042</p>
+            <p><strong>Position:</strong> Professor, Dept. of Orthodontics, Rishiraj College of Dental Sciences</p>
+        </div>
+    </div>
+
+    <!-- Doctor 2 -->
+    <div class="doctor-card">
+        <img src="nishta.jpg" alt="Dr. Nishta">
+        <div>
+            <h2>Dr. Mrs. Nishta Chaukse</h2>
+            <p><strong>BDS (Gold Medalist)</strong></p>
+            <p><strong>Reg. No:</strong> A-2067</p>
+            <p><strong>Experience:</strong> 16 Years</p>
+            <p><strong>Address:</strong> HP Petrol Pump, JSM Tower, Beemakunj Kolar Rd Opposite, Bhopal, Madhya Pradesh 462042</p>
+            <p><strong>Visiting Consultants:</strong></p>
+            <p>• Periodontist (Gum Specialist)</p>
+            <p>• Endodontist (Root Canal Specialist)</p>
+            <p>• Implantologist & Maxillofacial Surgeon</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- MAP -->
+<div class="map-title">
+    <h2>Find Us on Google Maps</h2>
+</div>
+
+<div style="width:100%; max-width:1100px; margin:auto; padding:20px;">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.2288415956135!2d77.415!3d23.181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c437393aa4bd9%3A0x119057aca3e96e2d!2sAnkur%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1700000000000"
+        width="100%"
+        height="380"
+        style="border:0; border-radius:14px; box-shadow:0 8px 20px rgba(0,0,0,0.15);"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</div>
+
+<!-- WhatsApp Button -->
+<a class="floating-btn" href="https://wa.me/919827287656" target="_blank">💬</a>
+
+<footer>
+    © <span id="year"></span> Ankur Dental Clinic – All Rights Reserved
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+
